@@ -1,4 +1,0 @@
-Keith Kreider
-=====================
-
-It begins.
