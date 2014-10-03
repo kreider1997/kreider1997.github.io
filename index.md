@@ -4,6 +4,9 @@ title:  Keith Kreider's Blog
 ---
 
 #**Keith Kreider**
+
+____
+
 In 2013 it became clear that I required a change of careers. Not just a job change, but a new direction. The problem was, how do I do it, and what do I do. As time went by I struggled to find realistic options. My job did not allow me the time to go back to school or pursue any sort of side job that could cultivate a meaningful career. In August I learned about a new opportunity called the [Iron Yard Academy](http://theironyard.com/academy/). Located less than 3 miles from where I lived, its credo was "Life is too short for the wrong career. Learn to Code". I have always been comfortable with computers, the hardware, software and everything in between. While my coding experience was limited, my overwhelming desire to learn and grow in a field that I'm comfortable with and enjoy made this a tempting opportunity. After much reflection, I decided now is the time. So, on September 22nd, I started my journey to a new career as a [Front End Engineer](http://theironyard.com/academy/front-end-engineering/).
 
 ____
