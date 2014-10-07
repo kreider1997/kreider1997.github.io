@@ -14,9 +14,9 @@ ____
 ###**Blog Posts**
 
  * [Sept 26 Blog, Week 1](2014/09/26/Week1.html)
- * [Sept 24 Blog](2014/09/24/Post.html)
- * [Sept 25 Blog](2014/09/25/Post.html)
- * [Sept 26 Blog](2014/09/26/Post.html)
+ * [Oct 03 Blog, Week 2](2014/10/03/Week2.html)
+ * [Oct 06 Blog, Week 3](2014/10/10/Week3.html)
+
 
 ____
 
@@ -25,6 +25,16 @@ ____
  * [TIY-Assignments](https://github.com/kreider1997/TIY-Assignments)
  * [Anchor-scroll](https://github.com/kreider1997/anchor-scroll)
  * [markdown-here](https://github.com/kreider1997/markdown-here)
+
+____
+
+####**Links to the various programs we are being introduced to**
+ * [GitHub}(https://github.com/)
+ * [Cloud9](https://c9.io/)
+ * [Jekyll](http://jekyllrb.com/)
+ * [Homebrew](http://brew.sh/)
+ * [NVM](https://github.com/creationix/nvm)
+ * [Mocha](http://visionmedia.github.io/mocha/)
 
 
 
