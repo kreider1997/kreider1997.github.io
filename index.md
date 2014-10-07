@@ -13,7 +13,7 @@ ____
 
 ###**Blog Posts**
 
- * [Sept 23 Blog](2014/09/23/Post.html)
+ * [Sept 26 Blog, Week 1](2014/09/26/Week1.html)
  * [Sept 24 Blog](2014/09/24/Post.html)
  * [Sept 25 Blog](2014/09/25/Post.html)
  * [Sept 26 Blog](2014/09/26/Post.html)
