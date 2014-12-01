@@ -9,9 +9,9 @@
         font-family: sans-serif;
         color: #262F34
       }
-      header, img {
+      header img {
         background-repeat: no-repeat;
-        height: 399px;
+        height: 100%;
         width: 100%;
         z-index: -1;
       }
@@ -47,11 +47,22 @@
       aside, nav, a {
         font-weight: 700;
       }
+      #star {
+        margin-right: 74%;
+      }
       #base {
         margin-right: 74%;
         font-size: 100%;
         font-weight: 100;
       }
+      .author {
+        font-style: italic;
+      }
+    @media screen and (max-width: 800px) {
+      body {
+        font-size: 60%;
+      }
+    }
     </style>
     <script>
 
@@ -62,14 +73,15 @@
       <img src="http://static.tumblr.com/ghqgiyp/Tn9m1lrc4/im-header-starwars-all.jpg">
 
     </header>
-    <nav><a href="http://theironyard.com"><img id="rebel" src="http://www.wired.com/geekmom/wp-content/uploads/2012/04/REBEL_LEGION.jpg"></a></nav>
+    <nav><a href="http://theironyard.com"><img id="rebel" src="images/REBEL_LEGION.jpg"></a></nav>
     <aside>
-      <nav><a href="http://www.starwars.com/databank/rebel-alliance">THE REBAL ALLIANCE -- ENDOR</a></nav>
+      <nav id="star"><a href="http://www.starwars.com/databank/rebel-alliance">THE REBEL ALLIANCE -- ENDOR</a></nav>
       <p id="base"> The Alliance to Restore the Republic (commonly known as the Rebel Alliance, and, informally, as the Rebellion) is an interstellar faction of the fictional universe of Star Wars.</p>
     </aside>
     <section>
       <article>
         <h1>Episode XXV Part Dux</h1>
+        <p class="author">By Keith Kreider</p>
         <p>Luke is really old.  Due to the fall of the Empire, universal health care is no more.  Luke does not have access to the medication or doctors he needs to live out the rest of his days in peace.  Despite his Jedi powers, Luke cannot get a job.  The Rebel alliance, after decades of fighting, is in great debt and cannot affort to provide medical care for its citizens.  So, Princess Lea stared a house of "comfort" and now Luke can live happily ever after.</p>
       </article>
     </section>
