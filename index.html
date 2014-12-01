@@ -12,6 +12,7 @@
       }
       header img {
         background-repeat: no-repeat;
+        background: beige;
         height: 100%;
         width: 100%;
         z-index: -1;
@@ -50,14 +51,10 @@
         max-width: 17em;
         word-wrap: normal;
       }
-      aside, nav, a {
+      aside nav a {
         font-weight: 700;
       }
-      #star {
-        /* margin-right: 46em; */
-      }
       #base {
-        /* margin-right: 46em; */
         font-size: 100%;
         font-weight: 100;
         text-align: justify;
@@ -65,11 +62,18 @@
       .author {
         font-style: italic;
       }
+    @media screen and (max-width: 1050px) {
+      body {
+        font-size: 76%;
+      }
+    }
+
     @media screen and (max-width: 800px) {
       body {
         font-size: 60%;
       }
     }
+
     </style>
     <script>
 
