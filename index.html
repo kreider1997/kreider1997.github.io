@@ -8,50 +8,39 @@
       body {
         background: beige;
         font-family: sans-serif;
-        color: #262F34
+      }
+      .container {
+        color: #262F34;
+        max-width: 1200px;
+        min-width: 800px;
+        margin: 0 auto;
       }
       header img {
         background-repeat: no-repeat;
-        background: beige;
         height: 100%;
         width: 100%;
         z-index: -1;
       }
-      #rebel {
+      aside {
         float: left;
+        margin-top: -5em;
+        margin-left: 5%;
+        margin-right: 0;
+        max-width: 17em;
+        word-wrap: normal;
+        border-bottom: 1pt solid lightgrey;
+      }
+      #rebel {
         position: relative;
-        width: 12%;
+        margin-left: 2em;
+        margin-bottom: 1em;
+        width: 10em;
         height: inherit;
-        margin-top: -6%;
-        margin-left: 7%;
-        border: 7pt, solid, white;
+        border: 4pt solid #c9b348;
         z-index: 10;
         border-radius: 50%;
       }
-      article {
-        margin-left: 14em;
-        margin-right: 7em;
-      }
-      article, h1 {
-        font-size: 160%;
-      }
-      section {
-        margin-left: 5%;
-      }
-      section p {
-        font-size: 70%;
-        text-align: justify;
-      }
-      aside {
-        float: left;
-        margin-top: 7%;
-        position: absolute;
-        margin-left: 5%;
-        margin-right: 47em;
-        max-width: 17em;
-        word-wrap: normal;
-      }
-      aside nav a {
+      .star {
         font-weight: 700;
       }
       #base {
@@ -59,8 +48,39 @@
         font-weight: 100;
         text-align: justify;
       }
+      article {
+        border-bottom: 2pt groove lightgrey;
+
+      }
+      article, h1 {
+        font-size: 160%;
+      }
+      section {
+        margin-left: 24em;
+        margin-right: 7em;
+      }
+      section p {
+        font-size: 70%;
+        text-align: justify;
+      }
       .author {
         font-style: italic;
+      }
+      footer {
+        border-top: 1pt dotted lightgrey;
+        color: grey;
+        margin-left: 10em;
+      }
+      footer nav img {
+        float: left;
+        width: 5em;
+        border-radius: 50%;
+      }
+      footer p {
+        margin left: 20em;
+      }
+      footer > p {
+        text-transform: uppercase;
       }
     @media screen and (max-width: 1050px) {
       body {
@@ -80,13 +100,15 @@
     </script>
   </head>
   <body>
+    <div class="container">
     <header>
       <img src="http://static.tumblr.com/ghqgiyp/Tn9m1lrc4/im-header-starwars-all.jpg">
 
     </header>
-    <nav><a href="http://theironyard.com"><img id="rebel" src="Images/REBEL_LEGION.jpg"></a></nav>
+
     <aside>
-      <nav id="star"><a href="http://www.starwars.com/databank/rebel-alliance">THE REBEL ALLIANCE -- ENDOR</a></nav>
+      <nav><a href="http://theironyard.com"><img id="rebel" src="Images/REBEL_LEGION.jpg"></a></nav>
+      <nav id="star"><a href="http://www.starwars.com/databank/rebel-alliance">THE REBEL ALLIANCE | ENDOR</a></nav>
       <p id="base"> The Alliance to Restore the Republic (commonly known as the Rebel Alliance, and, informally, as the Rebellion) is an interstellar faction of the fictional universe of Star Wars.</p>
     </aside>
     <section>
@@ -95,6 +117,23 @@
         <p class="author">By Keith Kreider</p>
         <p>Luke is really old.  Due to the fall of the Empire, universal health care is no more.  Luke does not have access to the medication or doctors he needs to live out the rest of his days in peace.  Despite his Jedi powers, Luke cannot get a job.  The Rebel alliance, after decades of fighting, is in great debt and cannot affort to provide medical care for its citizens.  So, Princess Lea stared a house of "comfort" and now Luke can live happily ever after.</p>
       </article>
+      <article>
+        <h1>Sith-Its whats for lunch!</h1>
+        <p class="author">By Darth Carlos</p>
+        <p>The Sith were the most infamous of all dark side religions, and the members of the cult were often seen as the pinnacle of power within the dark side. Throughout their long history, the Sith commanded several Empires and initiated many galactic wars. With such great influence, the Sith religion inspired many cults that weren't technically part of the Sith Order, nor did they consist of actual Sith. Instead, they were founded and made up of Sith devotees and other Force-sensitives dedicated to prolonging the teachings and the memory of the Sith. Such cults included the Naddists, the Disciples of Ragnos, and the Krath.</p>
+      </article>
+      <article>
+        <h1>Wedge is NOT a Noob</h1>
+        <p class="author">By Luke Skywalker</p>
+        <p>Wedge Antilles, a Human male, was a famed Corellian pilot and general, known as a hero of the Rebel Alliance and New Republic. Orphaned at age seventeen, he joined the Rebellion after Imperial forces killed his girlfriend, Mala Tinero. A standout starfighter pilot, he was one of the few to survive the Battle of Yavin, after which he founded Rogue Squadron with his friend Luke Skywalker. Antilles and Skywalker built Rogue Squadron into a renowned unit, and after the Battle of Hoth, Antilles took command. He flew as Red Leader in the Battle of Endor, striking the blow that destroyed the second Death Star alongside Lando Calrissian and becoming the only pilot to survive both Death Star runs.</p>
+      </article>
     </section>
+  </div> <!--end container-->
+  <footer>
+    <nav><a href="http://theironyard.com"><img src="Images/REBEL_LEGION.jpg"></a></nav>
+    <p>Keith Kreider</p>
+    <p>Front End Developer creating the light side from dark matter</p>
+
+  </footer>
   </body>
 </html>
