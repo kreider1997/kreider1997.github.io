@@ -41,7 +41,7 @@
         z-index: 10;
         border-radius: 50%;
       }
-      .star {
+      #star {
         text-decoration: none;
         font-weight: 700;
       }
@@ -110,6 +110,9 @@
         display: inline;
       }
     @media screen and (max-width: 1024px) {
+      .container {
+        min-width: 600px;
+      }
       header {
         background-image: url("Images/1351680333_star1.jpg");
         height: 27em;
@@ -119,8 +122,28 @@
       }
       aside {
         float: none;
-        text align: center;
-        
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -8em;
+        border-bottom: none;
+        width: 40em;
+        max-width: 38em;
+      }
+      #base{
+        text-align: center;
+      }
+      section {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+      }
+      article {
+        background-color: white;
+        border: 1pt dotted lightgrey;
+        padding-left: 1em;
+        padding-right: 1em;
+        margin-bottom: 1em;
       }
     }
 
