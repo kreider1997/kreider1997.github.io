@@ -36,6 +36,7 @@
         max-width: 17em;
         word-wrap: normal;
         border-bottom: 1pt solid lightgrey;
+        color: grey;
       }
       #rebel {
         position: relative;
@@ -48,13 +49,23 @@
         border-radius: 50%;
       }
       #star {
+        text-align: center;
+      }
+      #star a{
         text-decoration: none;
         font-weight: 700;
+        color: grey;
       }
       #base {
         font-size: 100%;
         font-weight: 100;
         text-align: justify;
+        margin-bottom: 1em;
+      }
+      form {
+        margin-bottom: 1em;
+        text-transform: uppercase;
+        color: grey;
       }
       article {
         border-bottom: 2pt groove lightgrey;
@@ -148,6 +159,9 @@
         width: 40em;
         max-width: 38em;
       }
+      form {
+        display: none;
+      }
       #base{
         text-align: center;
       }
@@ -204,6 +218,10 @@
       <nav><a href="http://theironyard.com"><img id="rebel" src="Images/REBEL_LEGION.jpg"></a></nav>
       <nav id="star"><a href="http://www.starwars.com/databank/rebel-alliance">THE REBEL ALLIANCE | ENDOR</a></nav>
       <p id="base"> The Alliance to Restore the Republic (commonly known as the Rebel Alliance, and, informally, as the Rebellion) is an interstellar faction of the fictional universe of Star Wars.</p>
+      <form>
+        Search: <br> <br>
+        <input type="search" name="googlesearch">
+      </form>
     </aside>
     <section>
       <article>
