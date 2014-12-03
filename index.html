@@ -4,7 +4,7 @@
     <meta name="description" content="practice site for applying my knowledge">
     <meta name="author" content="Keith Michael Kreider">
     <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>A New Hope</title>
     <link href='http://fonts.googleapis.com/css?family=News+Cycle' rel='stylesheet' type='text/css'>
     <link href='normalize.css' type='text/css'>
@@ -16,7 +16,7 @@
       .container {
         color: #262F34;
         max-width: 1200px;
-        min-width: 600px;
+        min-width: 290px;
         margin: 0 auto;
       }
       header a {
@@ -33,6 +33,7 @@
         background-repeat: no-repeat;
         height: 22em;
         z-index: -1;
+        min-width: 30em;
       }
       aside {
         float: left;
@@ -147,6 +148,7 @@
       }
       header a {
         display: block;
+        position: fixed;
       }
       header a:hover {
         color: green;
@@ -161,8 +163,13 @@
         margin-right: auto;
         margin-top: -8em;
         border-bottom: none;
-        width: 40em;
+        width: 100%;
         max-width: 38em;
+        word-wrap: normal;
+      }
+      #rebel {
+        margin-left: 0;
+        font-size: 85%;
       }
       #star a {
         font-size: 280%;
@@ -210,6 +217,30 @@
         text-align: center;
         margin-left: 11em;
         margin-right: auto;
+      }
+    }
+    @media (max-width: 360px) {
+      aside {
+        margin-right: 1pt;
+        margin-left: 1pt;
+        margin-top: -17em;
+      }
+      #rebel {
+        font-size: 70%;
+      }
+      #base {
+        font-size: 130%;
+      }
+      section {
+        margin-left: 1pt;
+        margin-right: 1pt;
+        width: 100%;
+      }
+      section h1 {
+        font-size: 90%;
+      }
+      footer {
+        display: none;
       }
     }
 
