@@ -8,69 +8,202 @@
       body {
         background: beige;
         font-family: sans-serif;
-        color: #262F34
       }
-      header img {
+      .container {
+        color: #262F34;
+        max-width: 1200px;
+        min-width: 600px;
+        margin: 0 auto;
+      }
+      header a {
+        color: white;
+        font-size: 130%;
+        margin-left: 1em;
+        text-decoration: none;
+        display: none;
+      }
+      header {
+        background-image: url(http://static.tumblr.com/ghqgiyp/Tn9m1lrc4/im-header-starwars-all.jpg);
+        background-size: contain;
         background-repeat: no-repeat;
-        background: beige;
-        height: 100%;
-        width: 100%;
+        height: 22em;
         z-index: -1;
-      }
-      #rebel {
-        float: left;
-        position: relative;
-        width: 12%;
-        height: inherit;
-        margin-top: -6%;
-        margin-left: 7%;
-        border: 7pt, solid, white;
-        z-index: 10;
-        border-radius: 50%;
-      }
-      article {
-        margin-left: 14em;
-        margin-right: 7em;
-      }
-      article, h1 {
-        font-size: 160%;
-      }
-      section {
-        margin-left: 5%;
-      }
-      section p {
-        font-size: 70%;
-        text-align: justify;
       }
       aside {
         float: left;
-        margin-top: 7%;
-        position: absolute;
+        margin-top: -6em;
         margin-left: 5%;
-        margin-right: 47em;
+        margin-right: 0;
         max-width: 17em;
         word-wrap: normal;
+        border-bottom: 1pt solid lightgrey;
+        color: grey;
       }
-      aside nav a {
+      #rebel {
+        position: relative;
+        margin-left: 2em;
+        margin-bottom: 1em;
+        width: 10em;
+        height: inherit;
+        border: 4pt solid #c9b348;
+        z-index: 10;
+        border-radius: 50%;
+      }
+      #star {
+        text-align: center;
+      }
+      #star a{
+        text-decoration: none;
+        text-transform: uppercase;
         font-weight: 700;
+        color: grey;
       }
       #base {
         font-size: 100%;
         font-weight: 100;
         text-align: justify;
+        margin-bottom: 1em;
+      }
+      form {
+        margin-bottom: 1em;
+        text-transform: uppercase;
+        color: grey;
+      }
+      article {
+        border-bottom: 2pt groove lightgrey;
+        padding-bottom: 30pt;
+
+      }
+      article, h1 {
+        font-size: 160%;
+      }
+      section {
+        margin-left: 24em;
+        margin-right: 7em;
+      }
+      section p {
+        font-size: 70%;
+        text-align: justify;
       }
       .author {
         font-style: italic;
       }
-    @media screen and (max-width: 1050px) {
-      body {
-        font-size: 76%;
+      article nav {
+        padding-top: 15pt;
       }
-    }
-
-    @media screen and (max-width: 800px) {
-      body {
-        font-size: 60%;
+      article nav a {
+        text-decoration: none;
+        color: grey;
+        border: 1pt grey solid;
+        padding: 0 5pt 0 5pt;
+      }
+      .iconA {
+        margin-left: -6pt;
+      }
+      .time {
+        float: right;
+        border: none;
+        font-size: 70%;
+        padding-top: 5pt;
+      }
+      footer {
+        border-top: 1pt dotted lightgrey;
+        color: grey;
+        background-color: white;
+        margin: 4em 0 0em 0;
+        padding: 2em 0 6em 18em;
+      }
+      footer nav img {
+        float: left;
+        width: 5em;
+        border-radius: 50%;
+      }
+      footer p {
+        margin-left: 8em;
+      }
+      #footA {
+        text-transform: uppercase;
+      }
+      .footLink {
+        font-size: 115%;
+        display: inline;
+        margin-left: 7em;
+      }
+      .footLink a {
+        text-decoration: none;
+        padding-right: 2em;
+        color: grey;
+      }
+    @media screen and (max-width: 1024px) {
+      header {
+        background-image: url("Images/1351680333_star1.jpg");
+        height: 27em;
+      }
+      header a {
+        display: block;
+      }
+      header a:hover {
+        color: green;
+      }
+      h1 {
+        font-size: 110%;
+      }
+      aside {
+        float: none;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -8em;
+        border-bottom: none;
+        width: 40em;
+        max-width: 38em;
+      }
+      #star a {
+        font-size: 280%;
+        text-transform: capitalize;
+      }
+      form {
+        display: none;
+      }
+      #base{
+        text-align: center;
+      }
+      section {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 40em;
+        width: 90%;
+      }
+      article {
+        background-color: white;
+        border: 1pt dotted lightgrey;
+        padding-left: 1em;
+        padding-right: 1em;
+        margin-bottom: 1em;
+      }
+      .time {
+        display: none;
+      }
+      article nav {
+        float: right;
+        padding-top: 0;
+      }
+      article nav a {
+        border: none;
+      }
+      footer {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        text-align: center;
+      }
+      footer nav img {
+        margin-left: 10%;
+      }
+      .footLink {
+        text-align: center;
+        margin-left: 11em;
+        margin-right: auto;
       }
     }
 
@@ -80,21 +213,63 @@
     </script>
   </head>
   <body>
+    <div class="container">
     <header>
-      <img src="http://static.tumblr.com/ghqgiyp/Tn9m1lrc4/im-header-starwars-all.jpg">
-
+      <a href="#">&#9776</a>
     </header>
-    <nav><a href="http://theironyard.com"><img id="rebel" src="Images/REBEL_LEGION.jpg"></a></nav>
     <aside>
-      <nav id="star"><a href="http://www.starwars.com/databank/rebel-alliance">THE REBEL ALLIANCE -- ENDOR</a></nav>
+      <nav><a href="http://theironyard.com"><img id="rebel" src="Images/REBEL_LEGION.jpg"></a></nav>
+      <nav id="star"><a href="http://www.starwars.com/databank/rebel-alliance">the rebel alliance | endor</a></nav>
       <p id="base"> The Alliance to Restore the Republic (commonly known as the Rebel Alliance, and, informally, as the Rebellion) is an interstellar faction of the fictional universe of Star Wars.</p>
+      <form>
+        Search: <br> <br>
+        <input type="search" name="googlesearch">
+      </form>
     </aside>
     <section>
       <article>
         <h1>Episode XXV Part Dux</h1>
         <p class="author">By Keith Kreider</p>
         <p>Luke is really old.  Due to the fall of the Empire, universal health care is no more.  Luke does not have access to the medication or doctors he needs to live out the rest of his days in peace.  Despite his Jedi powers, Luke cannot get a job.  The Rebel alliance, after decades of fighting, is in great debt and cannot affort to provide medical care for its citizens.  So, Princess Lea stared a house of "comfort" and now Luke can live happily ever after.</p>
+        <nav>
+          <a href="#">&#9762</a>
+          <a class="iconA" href="mailto:kreider1997@att.net?subject=Cut%20the%20chatter%20Red%205">&#9993</a>
+          <a class="iconA" href="tel:+14078105933">&#9743</a>
+          <a class="time" href="#">A long time ago</a>
+        </nav>
+      </article>
+      <article>
+        <h1>Sith-It's whats for lunch!</h1>
+        <p class="author">By Darth Carlos</p>
+        <p>The Sith were the most infamous of all dark side religions, and the members of the cult were often seen as the pinnacle of power within the dark side. Throughout their long history, the Sith commanded several Empires and initiated many galactic wars. With such great influence, the Sith religion inspired many cults that weren't technically part of the Sith Order, nor did they consist of actual Sith. Instead, they were founded and made up of Sith devotees and other Force-sensitives dedicated to prolonging the teachings and the memory of the Sith. Such cults included the Naddists, the Disciples of Ragnos, and the Krath.</p>
+        <nav>
+          <a href="#">&#9762</a>
+          <a class="iconA" href="mailto:kreider1997@att.net?subject=Cut%20the%20chatter%20Red%205">&#9993</a>
+          <a class="iconA" href="tel:+14078105933">&#9743</a>
+          <a class="time" href="#">A long time ago</a>
+        </nav>
+      </article>
+      <article>
+        <h1>Wedge is NOT a Noob</h1>
+        <p class="author">By Ralf Skywalker</p>
+        <p>Wedge Antilles, a Human male, was a famed Corellian pilot and general, known as a hero of the Rebel Alliance and New Republic. Orphaned at age seventeen, he joined the Rebellion after Imperial forces killed his girlfriend, Mala Tinero. A standout starfighter pilot, he was one of the few to survive the Battle of Yavin, after which he founded Rogue Squadron with his friend Luke Skywalker. Antilles and Skywalker built Rogue Squadron into a renowned unit, and after the Battle of Hoth, Antilles took command. He flew as Red Leader in the Battle of Endor, striking the blow that destroyed the second Death Star alongside Lando Calrissian and becoming the only pilot to survive both Death Star runs.</p>
+        <nav>
+          <a href="#">&#9762</a>
+          <a class="iconA" href="mailto:kreider1997@att.net?subject=Cut%20the%20chatter%20Red%205">&#9993</a>
+          <a class="iconA" href="tel:+14078105933">&#9743</a>
+          <a class="time" href="#">A long time ago</a>
+        </nav>
       </article>
     </section>
+  </div> <!--end container-->
+  <footer>
+    <nav><a href="http://theironyard.com"><img src="Images/Rebel_Alliance.jpg"></a></nav>
+    <p id="footA">Keith Kreider</p>
+    <p>Front End Developer creating the light side from dark matter</p>
+    <div class="footLink">
+      <a href="mailto:kreider1997@att.net?subject=Cut%20the%20chatter%20Red%205">&#9993 kreider1997@att.net</a>
+      <a href="tel:+14078105933">&#9743 407-810-5933</a>
+    </div>
+  </footer>
   </body>
 </html>
