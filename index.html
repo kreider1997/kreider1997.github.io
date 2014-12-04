@@ -36,3 +36,11 @@ title: May The Blog Be With You
           <a class="time" href="#">A long time ago</a>
         </nav>
       </article>
+      <article>
+        <ul>
+          {% for post in site.posts limit: 10 %}
+          <li><a href="{{post.url}}">{{post.title}}</a></li>
+          {% endfor %}
+        </ul>
+
+      </article>
