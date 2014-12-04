@@ -1,0 +1,8 @@
+
+defaults:
+   -
+    scope:
+      path: "" # all files in the project
+      type: "posts" # all file in the project that are posts
+    values:
+      layout: "default"

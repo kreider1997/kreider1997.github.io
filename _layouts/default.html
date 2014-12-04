@@ -1,0 +1,290 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="description" content="practice site for applying my knowledge">
+    <meta name="author" content="Keith Michael Kreider">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A New Hope</title>
+    <link href='http://fonts.googleapis.com/css?family=News+Cycle' rel='stylesheet' type='text/css'>
+    <link href='normalize.css' type='text/css'>
+    <style>
+      body {
+        background: beige;
+        font-family: sans-serif;
+      }
+      .container {
+        color: #262F34;
+        max-width: 1200px;
+        min-width: 290px;
+        margin: 0 auto;
+      }
+      header #ham {
+        color: white;
+        font-size: 130%;
+        margin-left: 1em;
+        text-decoration: none;
+        cursor: not-allowed;
+        display: none;
+      }
+      header {
+        background-image: url(http://static.tumblr.com/ghqgiyp/Tn9m1lrc4/im-header-starwars-all.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 22em;
+        z-index: -1;
+      }
+      #rebel {
+        position: relative;
+        margin-left: 9%;
+        margin-bottom: 1em;
+        margin-top: 21%;
+        width: 10em;
+        height: inherit;
+        border: 4pt solid #c9b348;
+        z-index: 10;
+        border-radius: 50%;
+      }
+      aside {
+        float: left;
+        margin-top: 6em;
+        margin-left: 5%;
+        margin-right: 0;
+        max-width: 17em;
+        word-wrap: normal;
+        border-bottom: 1pt solid lightgrey;
+        color: grey;
+      }
+      #star {
+        text-align: center;
+      }
+      #star a{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: grey;
+      }
+      #base {
+        font-size: 100%;
+        font-weight: 100;
+        text-align: justify;
+        margin-bottom: 1em;
+      }
+      form {
+        margin-bottom: 1em;
+        text-transform: uppercase;
+        color: grey;
+      }
+      article {
+        border-bottom: 2pt groove lightgrey;
+        padding-bottom: 30pt;
+
+      }
+      article, h1 {
+        font-size: 160%;
+      }
+      section {
+        margin-left: 24em;
+        margin-right: 7em;
+      }
+      section p {
+        font-size: 70%;
+        text-align: justify;
+      }
+      .author {
+        font-style: italic;
+      }
+      article nav {
+        padding-top: 15pt;
+      }
+      article nav a {
+        text-decoration: none;
+        color: grey;
+        border: 1pt grey solid;
+        padding: 0 5pt 0 5pt;
+      }
+      .iconA {
+        margin-left: -6pt;
+      }
+      .time {
+        float: right;
+        border: none;
+        font-size: 70%;
+        padding-top: 5pt;
+      }
+      footer {
+        border-top: 1pt dotted lightgrey;
+        color: grey;
+        background-color: white;
+        margin: 4em 0 0em 0;
+        padding: 2em 0 6em 18em;
+      }
+      footer nav img {
+        float: left;
+        width: 5em;
+        border-radius: 50%;
+      }
+      footer p {
+        margin-left: 8em;
+      }
+      #footA {
+        text-transform: uppercase;
+      }
+      .footLink {
+        font-size: 115%;
+        display: inline;
+        margin-left: 7em;
+      }
+      .footLink a {
+        text-decoration: none;
+        padding-right: 2em;
+        color: grey;
+      }
+    @media screen and (max-width: 1024px) {
+      header {
+        background-image: url("Images/1351680333_star1.jpg");
+        height: 27em;
+        cursor: wait;
+      }
+      header nav {
+        text-align: center;
+      }
+      #rebel {
+        font-size: 85%;
+        margin: 33% 0 1em 0;
+        margin-top: 33%;
+        width: 11em;
+      }
+      header #ham {
+        display: block;
+        position: fixed;
+      }
+      header #ham:hover {
+        color: green;
+      }
+      h1 {
+        font-size: 110%;
+      }
+      aside {
+        float: none;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 6%;
+        border-bottom: none;
+        width: 90%;
+        max-width: 38em;
+        word-wrap: normal;
+      }
+      #star a {
+        font-size: 280%;
+        text-transform: capitalize;
+      }
+      form {
+        display: none;
+      }
+      #base{
+        text-align: center;
+      }
+      section {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 40em;
+        width: 90%;
+      }
+      article {
+        background-color: white;
+        border: 1pt dotted lightgrey;
+        padding-left: 1em;
+        padding-right: 1em;
+        margin-bottom: 1em;
+      }
+      .time {
+        display: none;
+      }
+      article nav {
+        float: right;
+        padding-top: 0;
+      }
+      article nav a {
+        border: none;
+      }
+      footer {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        text-align: center;
+      }
+      footer nav img {
+        margin-left: 10%;
+      }
+      .footLink {
+        text-align: center;
+        margin-left: 11em;
+        margin-right: auto;
+      }
+    }
+    @media (max-width: 360px) {
+      header {
+        height: 22em;
+      }
+      aside {
+        margin-right: 1pt;
+        margin-left: 1pt;
+        margin-top: -26%;
+        width: 100%;
+      }
+      #rebel {
+        font-size: 70%;
+        margin-top: 35%;
+      }
+      #base {
+        font-size: 130%;
+      }
+      section {
+        margin-left: 1pt;
+        margin-right: 1pt;
+        width: 100%;
+      }
+      section h1 {
+        font-size: 90%;
+      }
+      footer {
+        display: none;
+      }
+    }
+
+    </style>
+    <script>
+
+    </script>
+  </head>
+  <body>
+    <div class="container">
+    <header>
+      <a id="ham" href="#">&#9776</a>
+      <nav><a href="http://theironyard.com"><img id="rebel" src="Images/REBEL_LEGION.jpg"></a></nav>
+    </header>
+    <aside>
+      <nav id="star"><a href="http://www.starwars.com/databank/rebel-alliance">the rebel alliance | endor</a></nav>
+      <p id="base"> The Alliance to Restore the Republic (commonly known as the Rebel Alliance, and, informally, as the Rebellion) is an interstellar faction of the fictional universe of Star Wars.</p>
+      <form>
+        Search: <br> <br>
+        <input type="search" name="googlesearch">
+      </form>
+    </aside>
+    <section>
+      {{ content }}
+    </section>
+  </div> <!--end container-->
+  <footer>
+    <nav><a href="http://theironyard.com"><img src="Images/Rebel_Alliance.jpg"></a></nav>
+    <p id="footA">Keith Kreider</p>
+    <p>Front End Developer creating the light side from dark matter</p>
+    <div class="footLink">
+      <a href="mailto:kreider1997@att.net?subject=Cut%20the%20chatter%20Red%205">&#9993 kreider1997@att.net</a>
+      <a href="tel:+14078105933">&#9743 407-810-5933</a>
+    </div>
+  </footer>
+  </body>
+</html>
