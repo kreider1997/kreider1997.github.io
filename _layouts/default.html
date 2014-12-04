@@ -130,12 +130,12 @@
       #footA {
         text-transform: uppercase;
       }
-      .footLink {
+      #footLink {
         font-size: 115%;
         display: inline;
         margin-left: 7em;
       }
-      .footLink a {
+      #footLink a {
         text-decoration: none;
         padding-right: 2em;
         color: grey;
@@ -218,15 +218,25 @@
       footer nav img {
         margin-left: 10%;
       }
-      .footLink {
+      #footLink {
         text-align: center;
         margin-left: 11em;
         margin-right: auto;
       }
     }
-    @media (max-width: 360px) {
+    @media (max-width: 720px) {
       header {
         height: 22em;
+      }
+    }
+    @media (max-width: 487px) {
+      header {
+        height: 19em;
+      }
+    }
+    @media (max-width: 360px) {
+      header {
+        height: 255pt;
       }
       aside {
         margin-right: 1pt;
@@ -262,7 +272,7 @@
   <body>
     <div class="container">
     <header>
-      <a id="ham" href="#">&#9776</a>
+      <a id="ham" href="#footLink">&#9776</a>
       <nav><a href="http://theironyard.com"><img id="rebel" src="Images/REBEL_LEGION.jpg"></a></nav>
     </header>
     <aside>
@@ -281,7 +291,7 @@
     <nav><a href="http://theironyard.com"><img src="Images/Rebel_Alliance.jpg"></a></nav>
     <p id="footA">Keith Kreider</p>
     <p>Front End Developer creating the light side from dark matter</p>
-    <div class="footLink">
+    <div id="footLink">
       <a href="mailto:kreider1997@att.net?subject=Cut%20the%20chatter%20Red%205">&#9993 kreider1997@att.net</a>
       <a href="tel:+14078105933">&#9743 407-810-5933</a>
     </div>
