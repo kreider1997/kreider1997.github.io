@@ -81,7 +81,7 @@
 
       }
       article, h1 {
-        font-size: 160%;
+        font-size: 175%;
       }
       section {
         margin-left: 24em;
@@ -117,15 +117,16 @@
         color: grey;
         background-color: white;
         margin: 4em 0 0em 0;
-        padding: 2em 0 6em 18em;
+        padding: 2em 0 7em 12em;
       }
       footer nav img {
         float: left;
-        width: 5em;
-        border-radius: 50%;
+        width: 6em;
+        margin-left: 3em;
+        margin-right: 3em;
       }
       footer p {
-        margin-left: 8em;
+        margin-left: 0em;
       }
       #footA {
         text-transform: uppercase;
@@ -133,7 +134,7 @@
       #footLink {
         font-size: 115%;
         display: inline;
-        margin-left: 7em;
+        margin-left: 0em;
       }
       #footLink a {
         text-decoration: none;
@@ -142,7 +143,7 @@
       }
     @media screen and (max-width: 1024px) {
       header {
-        background-image: url("Images/1351680333_star1.jpg");
+        background-image: url("/Images/1351680333_star1.jpg");
         height: 27em;
         cursor: wait;
       }
@@ -220,13 +221,16 @@
       }
       #footLink {
         text-align: center;
-        margin-left: 11em;
+        margin-left: 3em;
         margin-right: auto;
       }
     }
     @media (max-width: 720px) {
       header {
         height: 22em;
+      }
+      footer {
+        display: none;
       }
     }
     @media (max-width: 487px) {
@@ -259,9 +263,7 @@
       section h1 {
         font-size: 90%;
       }
-      footer {
-        display: none;
-      }
+
     }
 
     </style>
@@ -273,7 +275,7 @@
     <div class="container">
     <header>
       <a id="ham" href="#footLink">&#9776</a>
-      <nav><a href="http://theironyard.com"><img id="rebel" src="Images/REBEL_LEGION.jpg"></a></nav>
+      <nav><a href="http://theironyard.com"><img id="rebel" src="/Images/REBEL_LEGION.jpg"></a></nav>
     </header>
     <aside>
       <nav id="star"><a href="http://www.starwars.com/databank/rebel-alliance">the rebel alliance | endor</a></nav>
@@ -284,11 +286,21 @@
       </form>
     </aside>
     <section>
+      <article>
+
       {{ content }}
+
+        <nav>
+          <a href="#rebel">&#9762</a>
+          <a class="iconA" href="mailto:kreider1997@att.net?subject=Cut%20the%20chatter%20Red%205">&#9993</a>
+          <a class="iconA" href="tel:+14078105933">&#9743</a>
+          <a class="time" href="#">A long time ago</a>
+        </nav>
+      </article>
     </section>
   </div> <!--end container-->
   <footer>
-    <nav><a href="http://theironyard.com"><img src="Images/Rebel_Alliance.jpg"></a></nav>
+    <nav><a href="http://theironyard.com"><img src="/Images/IronYard.png"></a></nav>
     <p id="footA">Keith Kreider</p>
     <p>Front End Developer creating the light side from dark matter</p>
     <div id="footLink">
