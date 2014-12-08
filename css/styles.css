@@ -132,7 +132,7 @@ footer p {
 }
 @media screen and (max-width: 1024px) {
   header {
-    background-image: url("/Images/1351680333_star1.jpg");
+    background-image: url("/img/1351680333_star1.jpg");
     height: 27em;
     cursor: wait;
   }
