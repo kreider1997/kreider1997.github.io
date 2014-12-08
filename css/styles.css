@@ -16,6 +16,7 @@ header #ham {
   cursor: not-allowed;
   display: none;
 }
+
 header {
   background-image: url(http://static.tumblr.com/ghqgiyp/Tn9m1lrc4/im-header-starwars-all.jpg);
   background-size: contain;
@@ -106,7 +107,29 @@ footer {
   color: grey;
   background-color: white;
   margin: 4em 0 0em 0;
-  padding: 2em 0 7em 12em;
+  padding: 2em 0 7em 0em;
+  max-width: none;
+}
+#linkMenu {
+  font-size: 170%;
+  color: midnightblue;
+  text-align: center;
+  margin: -2em auto 3em auto;
+  padding-left: 0;
+}
+#linkMenu ul {
+  list-style: none;
+}
+#linkMenu li {
+  display: inline;
+  padding-right: 3em;
+}
+#linkMenu li a {
+  text-decoration: none;
+  color: midnightblue;
+}
+footer nav {
+  padding-left: 12em;
 }
 footer nav img {
   float: left;
@@ -203,7 +226,15 @@ footer p {
     margin-left: auto;
     margin-right: auto;
     padding: 0;
+    padding-bottom: 3em;
     text-align: center;
+  }
+  #linkMenu {
+    padding-top: 1em;
+    margin-bottom: 2em;
+  }
+  footer nav {
+    padding-left: 0;
   }
   footer nav img {
     margin-left: 10%;
