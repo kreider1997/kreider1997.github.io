@@ -13,7 +13,6 @@ header #ham {
   font-size: 130%;
   margin-left: 1em;
   text-decoration: none;
-  cursor: not-allowed;
   display: none;
 }
 
@@ -93,6 +92,20 @@ article nav a {
   border: 1pt grey solid;
   padding: 0 5pt 0 5pt;
 }
+article li a {
+  text-decoration: none;
+  color: midnightblue;
+  transition-property: border-bottom, text-shadow;
+  transition-duration: .5s;
+  transition-timing-function: ease-out:
+}
+article li a:hover {
+  border-bottom: midnightblue 1.5pt solid;
+  text-shadow: black 0pt 0pt .5pt;
+  transition-property: border-bottom, text-shadow;
+  transition-duration: .5s;
+  transition-timing-function: ease-out:
+}
 .iconA {
   margin-left: -6pt;
 }
@@ -127,6 +140,17 @@ footer {
 #linkMenu li a {
   text-decoration: none;
   color: midnightblue;
+  transition-property: border-bottom, text-shadow;
+  transition-duration: .5s;
+  transition-timing-function: ease-out:
+}
+#linkMenu li a:hover {
+  border-bottom: midnightblue 1.5pt solid;
+  text-shadow: black 0pt 0pt 1pt;
+  font-size: 110%;
+  transition-property: border-bottom, text-shadow, font-size;
+  transition-duration: .5s;
+  transition-timing-function: ease-out:
 }
 footer nav {
   padding-left: 12em;
@@ -140,12 +164,21 @@ footer nav img {
 footer p {
   margin-left: 0em;
 }
-#footB {
-  text-shadow: black 0pt 0pt 12pt, black 0pt 0pt 5pt, blue 0pt 0pt 10pt;
-  color: white;
-}
 #footA {
   text-transform: uppercase;
+}
+#footB {
+  color: black;
+  transition-property: color, text-shadow;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+}
+#footB:hover {
+  text-shadow: black 0pt 0pt 12pt, black 0pt 0pt 5pt, blue 0pt 0pt 10pt;
+  color: white;
+  transition-property: color, text-shadow;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
 }
 #footLink {
   font-size: 115%;
