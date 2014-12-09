@@ -8,7 +8,7 @@ body {
   min-width: 290px;
   margin: 0 auto;
 }
-header #ham {
+header #ham a {
   color: white;
   font-size: 130%;
   margin-left: 1em;
@@ -147,8 +147,7 @@ footer {
 #linkMenu li a:hover {
   border-bottom: midnightblue 1.5pt solid;
   text-shadow: black 0pt 0pt 1pt;
-  font-size: 110%;
-  transition-property: border-bottom, text-shadow, font-size;
+  transition-property: border-bottom, text-shadow;
   transition-duration: .5s;
   transition-timing-function: ease-out:
 }
@@ -205,11 +204,11 @@ footer p {
     margin-top: 33%;
     width: 11em;
   }
-  header #ham {
+  header #ham a {
     display: block;
     position: fixed;
   }
-  header #ham:hover {
+  header #ham a:hover {
     color: green;
   }
   h1 {
