@@ -205,7 +205,6 @@ footer p {
   #rebel {
     font-size: 85%;
     margin: 33% 0 1em 0;
-    margin-top: 33%;
     width: 11em;
   }
   header #ham a {
@@ -281,7 +280,7 @@ footer p {
   }
   #footLink {
     text-align: center;
-    margin-left: 3em;
+    margin-left: 2em;
     margin-right: auto;
   }
 }
@@ -291,6 +290,7 @@ footer p {
   }
   footer {
     margin: 0;
+    padding-bottom: 8em;
   }
   #linkMenu li {
     display: block;
@@ -305,11 +305,39 @@ footer p {
     padding-right: 5em;
     padding-left: 5em;
   }
+  footer nav img {
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+    margin-top: 7em;
+    margin-left: -3em;
+    position: absolute;
+  }
+  #footA {
+    margin-top: -2em;
+  }
 }
 @media (max-width: 487px) {
   header {
     height: 19em;
   }
+  footer nav img {
+    margin-top: 9em;
+    padding-right: 0;
+  }
+  #footLink {
+    margin-left: auto;
+  }
+  #footB {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #footLink a {
+    display: block;
+    padding-right: 0;
+  }
+
 }
 @media (max-width: 360px) {
   header {
