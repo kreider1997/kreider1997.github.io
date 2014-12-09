@@ -1,0 +1,324 @@
+body {
+  background: beige;
+  font-family: sans-serif;
+}
+.container {
+  color: #262F34;
+  max-width: 1200px;
+  min-width: 290px;
+  margin: 0 auto;
+}
+header #ham {
+  color: white;
+  font-size: 130%;
+  margin-left: 1em;
+  text-decoration: none;
+  display: none;
+}
+
+header {
+  background-image: url(http://static.tumblr.com/ghqgiyp/Tn9m1lrc4/im-header-starwars-all.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 22em;
+  z-index: -1;
+}
+#rebel {
+  position: relative;
+  margin-left: 9%;
+  margin-bottom: 1em;
+  margin-top: 21%;
+  width: 10em;
+  height: inherit;
+  border: 4pt solid #c9b348;
+  z-index: 10;
+  border-radius: 50%;
+}
+aside {
+  float: left;
+  margin-top: 6em;
+  margin-left: 5%;
+  margin-right: 0;
+  max-width: 17em;
+  word-wrap: normal;
+  border-bottom: 1pt solid lightgrey;
+  color: grey;
+}
+#star {
+  text-align: center;
+}
+#star a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: grey;
+}
+#base {
+  font-size: 100%;
+  font-weight: 100;
+  text-align: justify;
+  margin-bottom: 1em;
+}
+form {
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  color: grey;
+}
+article {
+  border-bottom: 2pt groove lightgrey;
+  padding-bottom: 30pt;
+
+}
+article, h1 {
+  font-size: 175%;
+}
+section {
+  margin-left: 24em;
+  margin-right: 7em;
+}
+section p {
+  font-size: 70%;
+  text-align: justify;
+}
+.author {
+  font-style: italic;
+}
+article nav {
+  padding-top: 15pt;
+}
+article nav a {
+  text-decoration: none;
+  color: grey;
+  border: 1pt grey solid;
+  padding: 0 5pt 0 5pt;
+}
+article li a {
+  text-decoration: none;
+  color: midnightblue;
+  transition-property: border-bottom, text-shadow;
+  transition-duration: .5s;
+  transition-timing-function: ease-out:
+}
+article li a:hover {
+  border-bottom: midnightblue 1.5pt solid;
+  text-shadow: black 0pt 0pt .5pt;
+  transition-property: border-bottom, text-shadow;
+  transition-duration: .5s;
+  transition-timing-function: ease-out:
+}
+.iconA {
+  margin-left: -6pt;
+}
+.time {
+  float: right;
+  border: none;
+  font-size: 70%;
+  padding-top: 5pt;
+}
+footer {
+  border-top: 1pt dotted lightgrey;
+  color: grey;
+  background-color: white;
+  margin: 4em 0 0em 0;
+  padding: 2em 0 7em 0em;
+  max-width: none;
+}
+#linkMenu {
+  font-size: 170%;
+  color: midnightblue;
+  text-align: center;
+  margin: -2em auto 3em auto;
+  padding-left: 0;
+}
+#linkMenu ul {
+  list-style: none;
+}
+#linkMenu li {
+  display: inline;
+  padding-right: 3em;
+}
+#linkMenu li a {
+  text-decoration: none;
+  color: midnightblue;
+  transition-property: border-bottom, text-shadow;
+  transition-duration: .5s;
+  transition-timing-function: ease-out:
+}
+#linkMenu li a:hover {
+  border-bottom: midnightblue 1.5pt solid;
+  text-shadow: black 0pt 0pt 1pt;
+  font-size: 110%;
+  transition-property: border-bottom, text-shadow, font-size;
+  transition-duration: .5s;
+  transition-timing-function: ease-out:
+}
+footer nav {
+  padding-left: 12em;
+}
+footer nav img {
+  float: left;
+  width: 6em;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+footer p {
+  margin-left: 0em;
+}
+#footA {
+  text-transform: uppercase;
+}
+#footB {
+  color: black;
+  transition-property: color, text-shadow;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+}
+#footB:hover {
+  text-shadow: black 0pt 0pt 12pt, black 0pt 0pt 5pt, blue 0pt 0pt 10pt;
+  color: white;
+  transition-property: color, text-shadow;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+}
+#footLink {
+  font-size: 115%;
+  display: inline;
+  margin-left: 0em;
+}
+#footLink a {
+  text-decoration: none;
+  padding-right: 2em;
+  color: grey;
+}
+@media screen and (max-width: 1024px) {
+  header {
+    background-image: url("/img/1351680333_star1.jpg");
+    height: 27em;
+    cursor: wait;
+  }
+  header nav {
+    text-align: center;
+  }
+  #rebel {
+    font-size: 85%;
+    margin: 33% 0 1em 0;
+    margin-top: 33%;
+    width: 11em;
+  }
+  header #ham {
+    display: block;
+    position: fixed;
+  }
+  header #ham:hover {
+    color: green;
+  }
+  h1 {
+    font-size: 110%;
+  }
+  aside {
+    float: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6%;
+    border-bottom: none;
+    width: 90%;
+    max-width: 38em;
+    word-wrap: normal;
+  }
+  #star a {
+    font-size: 280%;
+    text-transform: capitalize;
+  }
+  form {
+    display: none;
+  }
+  #base{
+    text-align: center;
+  }
+  section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40em;
+    width: 90%;
+  }
+  article {
+    background-color: white;
+    border: 1pt dotted lightgrey;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 1em;
+  }
+  .time {
+    display: none;
+  }
+  article nav {
+    float: right;
+    padding-top: 0;
+  }
+  article nav a {
+    border: none;
+  }
+  footer {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    padding-bottom: 3em;
+    text-align: center;
+  }
+  #linkMenu {
+    padding-top: 1em;
+    margin-bottom: 2em;
+  }
+  footer nav {
+    padding-left: 0;
+  }
+  footer nav img {
+    margin-left: 10%;
+  }
+  #footLink {
+    text-align: center;
+    margin-left: 3em;
+    margin-right: auto;
+  }
+}
+@media (max-width: 720px) {
+  header {
+    height: 22em;
+  }
+  footer {
+    display: none;
+  }
+}
+@media (max-width: 487px) {
+  header {
+    height: 19em;
+  }
+}
+@media (max-width: 360px) {
+  header {
+    height: 255pt;
+  }
+  aside {
+    margin-right: 1pt;
+    margin-left: 1pt;
+    margin-top: -26%;
+    width: 100%;
+  }
+  #rebel {
+    font-size: 70%;
+    margin-top: 35%;
+  }
+  #base {
+    font-size: 130%;
+  }
+  section {
+    margin-left: 1pt;
+    margin-right: 1pt;
+    width: 100%;
+  }
+  section h1 {
+    font-size: 90%;
+  }
+
+}

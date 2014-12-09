@@ -1,281 +1,31 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
     <meta name="description" content="practice site for applying my knowledge">
     <meta name="author" content="Keith Michael Kreider">
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>A New Hope</title>
     <link href='http://fonts.googleapis.com/css?family=News+Cycle' rel='stylesheet' type='text/css'>
-    <link href='normalize.css' type='text/css'>
-    <style>
-      body {
-        background: beige;
-        font-family: sans-serif;
-      }
-      .container {
-        color: #262F34;
-        max-width: 1200px;
-        min-width: 290px;
-        margin: 0 auto;
-      }
-      header #ham {
-        color: white;
-        font-size: 130%;
-        margin-left: 1em;
-        text-decoration: none;
-        cursor: not-allowed;
-        display: none;
-      }
-      header {
-        background-image: url(http://static.tumblr.com/ghqgiyp/Tn9m1lrc4/im-header-starwars-all.jpg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 22em;
-        z-index: -1;
-      }
-      #rebel {
-        position: relative;
-        margin-left: 9%;
-        margin-bottom: 1em;
-        margin-top: 21%;
-        width: 10em;
-        height: inherit;
-        border: 4pt solid #c9b348;
-        z-index: 10;
-        border-radius: 50%;
-      }
-      aside {
-        float: left;
-        margin-top: 6em;
-        margin-left: 5%;
-        margin-right: 0;
-        max-width: 17em;
-        word-wrap: normal;
-        border-bottom: 1pt solid lightgrey;
-        color: grey;
-      }
-      #star {
-        text-align: center;
-      }
-      #star a{
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: 700;
-        color: grey;
-      }
-      #base {
-        font-size: 100%;
-        font-weight: 100;
-        text-align: justify;
-        margin-bottom: 1em;
-      }
-      form {
-        margin-bottom: 1em;
-        text-transform: uppercase;
-        color: grey;
-      }
-      article {
-        border-bottom: 2pt groove lightgrey;
-        padding-bottom: 30pt;
-
-      }
-      article, h1 {
-        font-size: 175%;
-      }
-      section {
-        margin-left: 24em;
-        margin-right: 7em;
-      }
-      section p {
-        font-size: 70%;
-        text-align: justify;
-      }
-      .author {
-        font-style: italic;
-      }
-      article nav {
-        padding-top: 15pt;
-      }
-      article nav a {
-        text-decoration: none;
-        color: grey;
-        border: 1pt grey solid;
-        padding: 0 5pt 0 5pt;
-      }
-      .iconA {
-        margin-left: -6pt;
-      }
-      .time {
-        float: right;
-        border: none;
-        font-size: 70%;
-        padding-top: 5pt;
-      }
-      footer {
-        border-top: 1pt dotted lightgrey;
-        color: grey;
-        background-color: white;
-        margin: 4em 0 0em 0;
-        padding: 2em 0 7em 12em;
-      }
-      footer nav img {
-        float: left;
-        width: 6em;
-        margin-left: 3em;
-        margin-right: 3em;
-      }
-      footer p {
-        margin-left: 0em;
-      }
-      #footA {
-        text-transform: uppercase;
-      }
-      #footLink {
-        font-size: 115%;
-        display: inline;
-        margin-left: 0em;
-      }
-      #footLink a {
-        text-decoration: none;
-        padding-right: 2em;
-        color: grey;
-      }
-    @media screen and (max-width: 1024px) {
-      header {
-        background-image: url("/Images/1351680333_star1.jpg");
-        height: 27em;
-        cursor: wait;
-      }
-      header nav {
-        text-align: center;
-      }
-      #rebel {
-        font-size: 85%;
-        margin: 33% 0 1em 0;
-        margin-top: 33%;
-        width: 11em;
-      }
-      header #ham {
-        display: block;
-        position: fixed;
-      }
-      header #ham:hover {
-        color: green;
-      }
-      h1 {
-        font-size: 110%;
-      }
-      aside {
-        float: none;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 6%;
-        border-bottom: none;
-        width: 90%;
-        max-width: 38em;
-        word-wrap: normal;
-      }
-      #star a {
-        font-size: 280%;
-        text-transform: capitalize;
-      }
-      form {
-        display: none;
-      }
-      #base{
-        text-align: center;
-      }
-      section {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 40em;
-        width: 90%;
-      }
-      article {
-        background-color: white;
-        border: 1pt dotted lightgrey;
-        padding-left: 1em;
-        padding-right: 1em;
-        margin-bottom: 1em;
-      }
-      .time {
-        display: none;
-      }
-      article nav {
-        float: right;
-        padding-top: 0;
-      }
-      article nav a {
-        border: none;
-      }
-      footer {
-        margin-left: auto;
-        margin-right: auto;
-        padding: 0;
-        text-align: center;
-      }
-      footer nav img {
-        margin-left: 10%;
-      }
-      #footLink {
-        text-align: center;
-        margin-left: 3em;
-        margin-right: auto;
-      }
-    }
-    @media (max-width: 720px) {
-      header {
-        height: 22em;
-      }
-      footer {
-        display: none;
-      }
-    }
-    @media (max-width: 487px) {
-      header {
-        height: 19em;
-      }
-    }
-    @media (max-width: 360px) {
-      header {
-        height: 255pt;
-      }
-      aside {
-        margin-right: 1pt;
-        margin-left: 1pt;
-        margin-top: -26%;
-        width: 100%;
-      }
-      #rebel {
-        font-size: 70%;
-        margin-top: 35%;
-      }
-      #base {
-        font-size: 130%;
-      }
-      section {
-        margin-left: 1pt;
-        margin-right: 1pt;
-        width: 100%;
-      }
-      section h1 {
-        font-size: 90%;
-      }
-
-    }
-
-    </style>
-    <script>
-
-    </script>
+    <link rel="stylesheet" href='/css/normalize.css' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
+<script src="js/vendor/modernizr-2.6.2.min.js"></script>
   </head>
   <body>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
     <div class="container">
-    <header>
-      <a id="ham" href="#footLink">&#9776</a>
-      <nav><a href="http://theironyard.com"><img id="rebel" src="/Images/REBEL_LEGION.jpg"></a></nav>
+      <header>
+        <div id="ham">
+            &#9776
+        </div>
+      <nav><a href="http://theironyard.com"><img id="rebel" src="/img/REBEL_LEGION.jpg"></a></nav>
     </header>
     <aside>
       <nav id="star"><a href="http://www.starwars.com/databank/rebel-alliance">the rebel alliance | endor</a></nav>
@@ -298,15 +48,39 @@
         </nav>
       </article>
     </section>
-  </div> <!--end container-->
   <footer>
-    <nav><a href="http://theironyard.com"><img src="/Images/IronYard.png"></a></nav>
-    <p id="footA">Keith Kreider</p>
-    <p>Front End Developer creating the light side from dark matter</p>
-    <div id="footLink">
-      <a href="mailto:kreider1997@att.net?subject=Cut%20the%20chatter%20Red%205">&#9993 kreider1997@att.net</a>
-      <a href="tel:+14078105933">&#9743 407-810-5933</a>
+    <div id="linkMenu">
+      <ul>
+        <li> <a href="#rebel">Home</a> </li>
+        <li> <a href="#footLink">About</a> </li>
+        <li> <a href="https://github.com/kreider1997">GitHub</a> </li>
+        <li> <a href="#">LinkedIn</a></li>
+      </ul>
     </div>
+    <nav>
+      <a href="http://theironyard.com"><img src="/img/IronYard.png"></a>
+      <p id="footA">Keith Kreider</p>
+      <p id="footB">Front End Developer creating the light side from dark matter</p>
+      <div id="footLink">
+        <a href="mailto:kreider1997@att.net?subject=Cut%20the%20chatter%20Red%205">&#9993 kreider1997@att.net</a>
+        <a href="tel:+14078105933">&#9743 407-810-5933</a>
+      </div>
+    </nav>
   </footer>
+</div> <!--end container-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+  <script src="/js/plugins.js"></script>
+  <script src="/js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+  </script>
   </body>
 </html>
