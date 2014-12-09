@@ -5,10 +5,10 @@ body {
 .container {
   color: #262F34;
   max-width: 1200px;
-  min-width: 290px;
+  min-width: 320px;
   margin: 0 auto;
 }
-header #ham {
+header #ham a {
   color: white;
   font-size: 130%;
   margin-left: 1em;
@@ -126,31 +126,34 @@ footer {
 #linkMenu {
   font-size: 170%;
   color: midnightblue;
-  text-align: center;
   margin: -2em auto 3em auto;
   padding-left: 0;
 }
 #linkMenu ul {
   list-style: none;
+  text-align: center;
+  padding: 0;
 }
 #linkMenu li {
   display: inline;
+  text-align: center;
   padding-right: 3em;
+}
+#linkMenu li:last-child {
+  padding-right: 0;
 }
 #linkMenu li a {
   text-decoration: none;
   color: midnightblue;
-  transition-property: border-bottom, text-shadow;
+  transition-property: text-shadow;
   transition-duration: .5s;
-  transition-timing-function: ease-out:
+  transition-timing-function: ease-out;
 }
 #linkMenu li a:hover {
-  border-bottom: midnightblue 1.5pt solid;
-  text-shadow: black 0pt 0pt 1pt;
-  font-size: 110%;
-  transition-property: border-bottom, text-shadow, font-size;
+  text-shadow: black 0pt 0pt .5pt;
+  transition-property: text-shadow;
   transition-duration: .5s;
-  transition-timing-function: ease-out:
+  transition-timing-function: ease-out;
 }
 footer nav {
   padding-left: 12em;
@@ -202,14 +205,13 @@ footer p {
   #rebel {
     font-size: 85%;
     margin: 33% 0 1em 0;
-    margin-top: 33%;
     width: 11em;
   }
-  header #ham {
+  header #ham a {
     display: block;
     position: fixed;
   }
-  header #ham:hover {
+  header #ham a:hover {
     color: green;
   }
   h1 {
@@ -278,7 +280,7 @@ footer p {
   }
   #footLink {
     text-align: center;
-    margin-left: 3em;
+    margin-left: 2em;
     margin-right: auto;
   }
 }
@@ -287,13 +289,55 @@ footer p {
     height: 22em;
   }
   footer {
-    display: none;
+    margin: 0;
+    padding-bottom: 8em;
+  }
+  #linkMenu li {
+    display: block;
+    padding-right: 0em;
+    border-style: ridge;
+    border-width: 1pt;
+    border-color: grey;
+    padding-top: .1pt;
+    background-color: gainsboro;
+  }
+  #linkMenu li a {
+    padding-right: 5em;
+    padding-left: 5em;
+  }
+  footer nav img {
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+    margin-top: 7em;
+    margin-left: -3em;
+    position: absolute;
+  }
+  #footA {
+    margin-top: -2em;
   }
 }
 @media (max-width: 487px) {
   header {
     height: 19em;
   }
+  footer nav img {
+    margin-top: 9em;
+    padding-right: 0;
+  }
+  #footLink {
+    margin-left: auto;
+  }
+  #footB {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #footLink a {
+    display: block;
+    padding-right: 0;
+  }
+
 }
 @media (max-width: 360px) {
   header {
@@ -319,6 +363,10 @@ footer p {
   }
   section h1 {
     font-size: 90%;
+  }
+  #linkMenu li a {
+    padding-right: 4em;
+    padding-left: 4em;
   }
 
 }
