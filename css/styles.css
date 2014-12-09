@@ -5,7 +5,7 @@ body {
 .container {
   color: #262F34;
   max-width: 1200px;
-  min-width: 290px;
+  min-width: 320px;
   margin: 0 auto;
 }
 header #ham a {
@@ -131,6 +131,7 @@ footer {
 }
 #linkMenu ul {
   list-style: none;
+  text-align: center;
   padding: 0;
 }
 #linkMenu li {
@@ -138,19 +139,21 @@ footer {
   text-align: center;
   padding-right: 3em;
 }
+#linkMenu li:last-child {
+  padding-right: 0;
+}
 #linkMenu li a {
   text-decoration: none;
   color: midnightblue;
-  transition-property: border-bottom, text-shadow;
+  transition-property: text-shadow;
   transition-duration: .5s;
-  transition-timing-function: ease-out:
+  transition-timing-function: ease-out;
 }
 #linkMenu li a:hover {
-  border-bottom: midnightblue 1.5pt solid;
-  text-shadow: black 0pt 0pt 1pt;
-  transition-property: border-bottom, text-shadow;
+  text-shadow: black 0pt 0pt .5pt;
+  transition-property: text-shadow;
   transition-duration: .5s;
-  transition-timing-function: ease-out:
+  transition-timing-function: ease-out;
 }
 footer nav {
   padding-left: 12em;
@@ -298,6 +301,10 @@ footer p {
     padding-top: .1pt;
     background-color: gainsboro;
   }
+  #linkMenu li a {
+    padding-right: 5em;
+    padding-left: 5em;
+  }
 }
 @media (max-width: 487px) {
   header {
@@ -328,6 +335,10 @@ footer p {
   }
   section h1 {
     font-size: 90%;
+  }
+  #linkMenu li a {
+    padding-right: 4em;
+    padding-left: 4em;
   }
 
 }
