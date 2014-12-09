@@ -126,15 +126,16 @@ footer {
 #linkMenu {
   font-size: 170%;
   color: midnightblue;
-  text-align: center;
   margin: -2em auto 3em auto;
   padding-left: 0;
 }
 #linkMenu ul {
   list-style: none;
+  padding: 0;
 }
 #linkMenu li {
   display: inline;
+  text-align: center;
   padding-right: 3em;
 }
 #linkMenu li a {
@@ -286,7 +287,16 @@ footer p {
     height: 22em;
   }
   footer {
-    display: none;
+    margin: 0;
+  }
+  #linkMenu li {
+    display: block;
+    padding-right: 0em;
+    border-style: ridge;
+    border-width: 1pt;
+    border-color: grey;
+    padding-top: .1pt;
+    background-color: gainsboro;
   }
 }
 @media (max-width: 487px) {
