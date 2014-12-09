@@ -1,5 +1,5 @@
-body {
-  background: beige;
+#big {
+  background-color: beige;
   font-family: sans-serif;
 }
 .container {
@@ -97,14 +97,14 @@ article li a {
   color: midnightblue;
   transition-property: border-bottom, text-shadow;
   transition-duration: .5s;
-  transition-timing-function: ease-out:
+  transition-timing-function: ease-out;
 }
 article li a:hover {
   border-bottom: midnightblue 1.5pt solid;
   text-shadow: black 0pt 0pt .5pt;
   transition-property: border-bottom, text-shadow;
   transition-duration: .5s;
-  transition-timing-function: ease-out:
+  transition-timing-function: ease-out;
 }
 .iconA {
   margin-left: -6pt;
@@ -126,7 +126,7 @@ footer {
 #linkMenu {
   font-size: 170%;
   color: midnightblue;
-  margin: -2em auto 3em auto;
+  margin: 0em auto 3em auto;
   padding-left: 0;
 }
 #linkMenu ul {
@@ -185,7 +185,6 @@ footer p {
 }
 #footLink {
   font-size: 115%;
-  display: inline;
   margin-left: 0em;
 }
 #footLink a {
@@ -269,7 +268,7 @@ footer p {
     text-align: center;
   }
   #linkMenu {
-    padding-top: 1em;
+    padding-top: 0;
     margin-bottom: 2em;
   }
   footer nav {
