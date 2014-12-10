@@ -11,11 +11,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>A New Hope</title>
     <link href='http://fonts.googleapis.com/css?family=News+Cycle' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href='/css/normalize.css' type='text/css'>
+    <!--<link rel="stylesheet" href='/css/normalize.css' type='text/css'>-->
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
-<script src="/js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
   </head>
   <body id="big">
     <!--[if lt IE 7]>
@@ -24,10 +24,10 @@
     <div class="container">
       <header>
         <div id="ham" class="hidden-lg hidden-md">
-            <a href="#linkMenu">&#9776</a>
+            <a>&#9776</a>
         </div>
       <nav><a href="http://theironyard.com"><img id="rebel" src="/img/REBEL_LEGION.jpg"></a></nav>
-    </header>
+     </header>
     <aside>
       <nav id="star"><a href="http://www.starwars.com/databank/rebel-alliance">the rebel alliance | endor</a></nav>
       <p id="base"> The Alliance to Restore the Republic (commonly known as the Rebel Alliance, and, informally, as the Rebellion) is an interstellar faction of the fictional universe of Star Wars.</p>
@@ -50,13 +50,15 @@
       </article>
     </section>
   <footer>
-    <div id="linkMenu">
-      <ul>
-        <li> <a href="/index.html">Home</a> </li>
-        <li> <a href="#footLink">About</a> </li>
-        <li> <a href="https://github.com/kreider1997">GitHub</a> </li>
-        <li> <a href="#">LinkedIn</a></li>
-      </ul>
+    <div class="row">
+      <div class="linkMenu">
+        <ul>
+          <li class="col-xs-12 col-sm-3"> <a href="/index.html">Home</a> </li>
+          <li class="col-xs-12 col-sm-3"> <a href="#footLink">About</a> </li>
+          <li class="col-xs-12 col-sm-3"> <a href="https://github.com/kreider1997">GitHub</a> </li>
+          <li class="col-xs-12 col-sm-3"> <a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
     </div>
     <nav>
       <a href="http://theironyard.com"><img src="/img/IronYard.png"></a>
@@ -69,12 +71,13 @@
     </nav>
   </footer>
 </div> <!--end container-->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
   <script src="/js/plugins.js"></script>
-  <script src="/js/main.js"></script>
-  <script src="/bower_components/jquery/jquery.js"><</script>
+  <script src="/js/main.js"></script>-->
+  <script src="/bower_components/jquery/dist/jquery.min.js"><</script>
   <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/js/scripts.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>

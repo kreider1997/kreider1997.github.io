@@ -123,33 +123,33 @@ footer {
   padding: 2em 0 7em 0em;
   max-width: none;
 }
-#linkMenu {
+.linkMenu {
   font-size: 170%;
   color: midnightblue;
   margin: 0em auto 3em auto;
   padding-left: 0;
 }
-#linkMenu ul {
+.linkMenu ul {
   list-style: none;
   text-align: center;
   padding: 0;
 }
-#linkMenu li {
+.linkMenu li {
   display: inline;
   text-align: center;
-  padding-right: 3em;
+  /*padding-right: 3em;
 }
-#linkMenu li:last-child {
-  padding-right: 0;
+.linkMenu li:last-child {
+  padding-right: 0;*/
 }
-#linkMenu li a {
+.linkMenu li a {
   text-decoration: none;
   color: midnightblue;
   transition-property: text-shadow;
   transition-duration: .5s;
   transition-timing-function: ease-out;
 }
-#linkMenu li a:hover {
+.linkMenu li a:hover {
   text-shadow: black 0pt 0pt .5pt;
   transition-property: text-shadow;
   transition-duration: .5s;
@@ -193,6 +193,9 @@ footer p {
   color: grey;
 }
 @media screen and (max-width: 1024px) {
+  section {
+    max-width: 40em;
+  }
   header {
     background-image: url("/img/1351680333_star1.jpg");
     height: 27em;
@@ -240,7 +243,7 @@ footer p {
   section {
     margin-left: auto;
     margin-right: auto;
-    max-width: 40em;
+    /*max-width: 40em;*/
     width: 90%;
   }
   article {
@@ -267,7 +270,7 @@ footer p {
     padding-bottom: 3em;
     text-align: center;
   }
-  #linkMenu {
+  .linkMenu {
     padding-top: 0;
     margin-bottom: 2em;
   }
@@ -291,7 +294,7 @@ footer p {
     margin: 0;
     padding-bottom: 8em;
   }
-  #linkMenu li {
+  .linkMenu li {
     display: block;
     padding-right: 0em;
     border-style: ridge;
@@ -300,7 +303,7 @@ footer p {
     padding-top: .1pt;
     background-color: gainsboro;
   }
-  #linkMenu li a {
+  .linkMenu li a {
     padding-right: 5em;
     padding-left: 5em;
   }
@@ -316,7 +319,7 @@ footer p {
     margin-top: -2em;
   }
 }
-@media (max-width: 487px) {
+@media (max-width: 575px) {
   header {
     height: 19em;
   }
@@ -363,7 +366,7 @@ footer p {
   section h1 {
     font-size: 90%;
   }
-  #linkMenu li a {
+  .linkMenu li a {
     padding-right: 4em;
     padding-left: 4em;
   }
