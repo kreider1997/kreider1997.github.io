@@ -1,9 +1,14 @@
 $( document ).ready(function() {
 
+  $('a[rel="external"]').attr('target','_blank');
+
   var alian = $(".linkMenu").clone().prependTo("body");
-  $(alian).hide();
+  $(alian).addClass("close")
+
   $("#ham").click(function(){
-    $(alian).slideToggle("slow", function(){
-    });
+    if  ($(alian).hasClass("close"))
+        $(alian).removeClass("close").addClass("open");
+    else
+        $(alian).removeClass("open").addClass("close");
   });
 });
