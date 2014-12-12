@@ -157,19 +157,21 @@ footer {
   transition-timing-function: ease-out;
 }
 .open, .close {
-  transition-property: display;
+  transition-property: margin-top opacity;
   transition-duration: .5s;
-  transition-timing-function: ease-out;
+  transition-timing-function: ease-in-out;
 }
 .open {
-  height: 36px;
+  /*height: 36px;*/
   opacity: 1;
-  display: block;
+  margin-top: 0;
+  /*display: block;*/
 }
 .close {
-  height: 0;
+  /*height: 0;*/
+  margin-top: -145px;
   opacity: 0;
-  display: none;
+  /*display: none;*/
 }
 footer nav {
   padding-left: 12em;
